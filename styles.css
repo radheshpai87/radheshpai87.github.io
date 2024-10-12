@@ -155,14 +155,16 @@ nav ul li {
 /* Contact Section */
 #contact {
     padding: 100px 20px;
-    background-color: #222;
+    background-color: #000; /* Changed to black for contrast */
     text-align: center;
+    border-top: 5px solid #32cd32; /* Green border for separation */
 }
 
 #contact h2 {
     font-size: 2.5rem;
     color: #32cd32;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds depth to the text */
 }
 
 #contact p {
@@ -176,6 +178,10 @@ nav ul li {
 form {
     max-width: 600px;
     margin: 0 auto;
+    background: linear-gradient(135deg, rgba(50, 205, 50, 0.1), rgba(148, 0, 211, 0.1)); /* Light gradient background */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
 
 .form-group {
@@ -185,12 +191,13 @@ form {
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
+    border: 2px solid #32cd32; /* Green border */
+    border-radius: 10px;
+    background-color: #222; /* Dark background */
     color: #fff;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
 }
 
 input::placeholder, textarea::placeholder {
@@ -199,7 +206,7 @@ input::placeholder, textarea::placeholder {
 
 input:focus, textarea:focus {
     outline: none;
-    border: 2px solid #32cd32;
+    border-color: #9400d3; /* Purple border on focus */
 }
 
 textarea {
@@ -207,19 +214,21 @@ textarea {
 }
 
 button[type="submit"] {
-    background: linear-gradient(135deg, #32cd32, #9400d3);
+    background: linear-gradient(135deg, #32cd32, #9400d3); /* Gradient button */
     border: none;
     padding: 12px 30px;
     color: white;
     border-radius: 30px;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth background change */
 }
 
 button[type="submit"]:hover {
     transform: scale(1.05);
+    background: linear-gradient(135deg, #9400d3, #32cd32); /* Inverted gradient on hover */
 }
+
 
 /* Footer */
 footer {
