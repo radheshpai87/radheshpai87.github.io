@@ -46,12 +46,11 @@ nav ul li {
 /* Hero Section */
 #hero {
     height: 100vh;
-    background: url('your-image.jpg') no-repeat center center/cover;
+    background: url('matrix.gif') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
     position: relative;
 }
 
@@ -62,7 +61,7 @@ nav ul li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
 }
 
 .hero-content {
