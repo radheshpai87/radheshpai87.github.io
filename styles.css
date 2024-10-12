@@ -155,7 +155,7 @@ nav ul li {
 /* Contact Section */
 #contact {
     padding: 100px 20px;
-    background-color: #000; /* Changed to black for contrast */
+    background-color: #000; /* Black background for contrast */
     text-align: center;
     border-top: 5px solid #32cd32; /* Green border for separation */
 }
@@ -190,7 +190,7 @@ form {
 
 input[type="text"], input[type="email"], textarea {
     width: 100%;
-    padding: 15px;
+    padding: 15px; 
     border: 2px solid #32cd32; /* Green border */
     border-radius: 10px;
     background-color: #222; /* Dark background */
@@ -216,18 +216,20 @@ textarea {
 button[type="submit"] {
     background: linear-gradient(135deg, #32cd32, #9400d3); /* Gradient button */
     border: none;
-    padding: 12px 30px;
+    padding: 15px 30px; /* Increased padding for button */
     color: white;
     border-radius: 30px;
     font-size: 1.2rem;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease; /* Smooth background change */
+    margin-top: 20px; /* Space above button */
 }
 
 button[type="submit"]:hover {
     transform: scale(1.05);
     background: linear-gradient(135deg, #9400d3, #32cd32); /* Inverted gradient on hover */
 }
+
 
 
 /* Footer */
