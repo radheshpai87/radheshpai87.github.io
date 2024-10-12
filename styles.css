@@ -1,47 +1,133 @@
-body {
-    width: 100%;
-    height: 100vh;
+/* General Styles */
+* {
     margin: 0;
-    background-color: #1b1b32;
-    color: #f5f6f7;
-    font-family: Tahoma;
-    font-size: 16px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1,p {
-    margin: 1em auto;
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #32cd32; /* Green */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #9400d3; /* Purple */
+}
+
+/* Header */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
     text-align: center;
 }
-  
-form {
+
+#hero h1 {
+    font-size: 3rem;
+    color: #32cd32;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+#about h2 {
+    color: #32cd32;
+}
+
+#about p {
+    color: #bbb;
+    max-width: 600px;
     margin: 0 auto;
-    max-width: 500px;
-    min-width: 300px;
-    width: 60vw;
 }
 
-fieldset {
-    border: 0;
-    padding: 2rem 0;
-    border-bottom: 3px solid #3b3b4f;
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #111;
+    text-align: center;
 }
 
-fieldset:last-of-type {
-    border-bottom: none;
+#projects h2 {
+    color: #32cd32;
 }
 
-label {
-    display: block;
-    margin: 0.5rem 0;
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.inline {
-    width:unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
+.project {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    color: #ccc;
 }
 
-input,textarea,select {
-    width: 100%;
-    margin: 10px 0 0 0;
+.project h3 {
+    color: #32cd32;
+}
+
+.project p {
+    color: #bbb;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
