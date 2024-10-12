@@ -46,7 +46,7 @@ nav ul li {
 /* Hero Section */
 #hero {
     height: 100vh;
-    background: url('https://i.pinimg.com/originals/21/7d/a2/217da299cc918fad9b76eb99e4bb75b3.gif') no-repeat center center/cover;
+    background: url('matrix.gif') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@ nav ul li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hero-content {
@@ -150,6 +150,74 @@ nav ul li {
 .project h3 {
     color: #32cd32;
     margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #32cd32;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #bbb;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #32cd32;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #32cd32, #9400d3);
+    border: none;
+    padding: 12px 30px;
+    color: white;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
