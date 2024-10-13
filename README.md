@@ -5,7 +5,7 @@ A **modern**, **responsive** portfolio website built with **HTML**, **CSS**, and
 ## Live Demo
 
 Check out the live site here:  
-[Portfolio Live Demo](https://your-github-username.github.io/portfolio)
+[Portfolio Live Demo](https://radheshpai87.github.io/)
 
 ## Features
 
@@ -26,7 +26,7 @@ Check out the live site here:
 Clone the repo and open `index.html` in your browser.
 
 ```bash
-git clone https://github.com/your-github-username/portfolio.git
+git clone https://github.com/radheshpai87/radheshpai87.github.io.git
 cd portfolio
 ```
 ## Contact

@@ -190,10 +190,14 @@ nav ul li a:hover {
     display: inline-block;
     padding: 12px 30px;
     font-size: 1.2rem;
-    background: linear-gradient(135deg, #32cd32, #9400d3);
+    background: linear-gradient(135deg, #32cd32, #000);
     color: #fff;
     border-radius: 30px;
     transition: transform 0.3s ease;
+}
+
+.cta-button:hover{
+    background: linear-gradient(135deg, #000, #32cd32);
 }
 
 /* About Section */
@@ -217,6 +221,54 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
+/* Languages section styling */
+.languages-section {
+    margin: 50px 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .languages-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #00ff00; /* Green title to match the theme */
+  }
+  
+  .languages {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .language {
+    text-align: center;
+    max-width: 150px;
+    transition: transform 0.3s ease;
+  }
+  
+  .language img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .language p {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #aaa;
+  }
+  
+  .language:hover {
+    transform: scale(1.1);
+  }
+  
+  .language p:hover {
+    color: #00ff00; /* Green on hover */
+  }
+  
 /* Projects Section */
 #projects {
     padding: 100px 20px;
@@ -316,7 +368,7 @@ textarea {
 }
 
 button[type="submit"] {
-    background: linear-gradient(135deg, #32cd32, #9400d3); /* Gradient button */
+    background: linear-gradient(135deg, #32cd32, #000); /* Gradient button */
     border: none;
     padding: 15px 30px; /* Increased padding for button */
     color: white;
@@ -329,7 +381,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     transform: scale(1.05);
-    background: linear-gradient(135deg, #9400d3, #32cd32); /* Inverted gradient on hover */
+    background: linear-gradient(135deg, #000, #32cd32); /* Inverted gradient on hover */
 }
 
 
