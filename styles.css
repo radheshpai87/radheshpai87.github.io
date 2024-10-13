@@ -19,31 +19,35 @@ a {
   transition: color 0.3s ease;
 }
 
+/* General Reset for Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Preloader full screen black background */
 #preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #000; 
+  background-color: #000; /* Black background */
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
-  transition: opacity 1s ease; 
-  opacity: 1; 
+  z-index: 9999; /* Keep it above all other content */
+  transition: opacity 1s ease; /* Smooth fade-out transition */
+  opacity: 1; /* Start with full opacity */
 }
 
+/* Main content initially hidden */
 #main-content {
-    display: none; 
-    opacity: 0;
-  }
+    display: none; /* Hidden by default */
+    opacity: 0; /* Hidden by opacity */
+}
 
-
+/* Centered Loader (your provided CSS) */
 .loader {
   position: relative;
   width: 300px;
@@ -115,19 +119,21 @@ a {
   }
 }
 
+/* Hide preloader and show the main content */
 #main-content {
   display: none;
 }
 
+/* Navigation Bar */
 header {
   background-color: #000;
   padding: 20px 0;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
-  transition: background 0.3s ease; 
+  z-index: 1000; /* Navbar stays on top */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Shadow for a floating effect */
+  transition: background 0.3s ease; /* Smooth background transition */
 }
 
 .container {
@@ -142,7 +148,7 @@ header {
 .logo {
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
-  color: #fff; 
+  color: #fff; /* White logo */
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -169,11 +175,11 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #32cd32;
   color: #000;
-  transform: scale(1.1); 
-  box-shadow: 0 4px 10px rgba(50, 205, 50, 0.5); 
+  transform: scale(1.1); /* Slight scale effect on hover */
+  box-shadow: 0 4px 10px rgba(50, 205, 50, 0.5); /* Adds a glow effect */
 }
 
-
+/* Menu Toggle (Hamburger Icon) */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -186,15 +192,15 @@ nav ul li a:hover {
 .menu-toggle span {
   width: 100%;
   height: 3px;
-  background-color: #fff; 
+  background-color: #fff; /* White bars for the hamburger */
   border-radius: 3px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-
+/* Mobile Styles */
 @media (max-width: 768px) {
   nav ul {
-    display: none; 
+    display: none; /* Hidden on mobile by default */
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -206,7 +212,6 @@ nav ul li a:hover {
     gap: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
-}
 
   nav ul li {
     width: 100%;
@@ -218,15 +223,15 @@ nav ul li a:hover {
     width: 100%;
     padding: 15px 0;
     font-size: 1.5rem;
-    border-radius: 0; 
+    border-radius: 0; /* Full width for mobile */
     background-color: transparent;
   }
 
   .menu-toggle {
-    display: flex; 
+    display: flex; /* Show the hamburger menu on mobile */
   }
 
-  
+  /* Menu Toggle Animation */
   .menu-toggle.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
@@ -240,7 +245,8 @@ nav ul li a:hover {
   }
 
   nav ul.show {
-    display: flex; 
+    display: flex; /* Show the menu when toggled */
+  }
 }
 
 /* Hero Section */
@@ -404,7 +410,7 @@ nav ul li a:hover {
 /* Contact Section */
 #contact {
   padding: 100px 20px;
-  background-color: #000; 
+  background-color: #000; /* Black background for contrast */
   text-align: center;
 }
 
@@ -412,7 +418,7 @@ nav ul li a:hover {
   font-size: 2.5rem;
   color: #32cd32;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds depth to the text */
 }
 
 #contact p {
@@ -430,10 +436,10 @@ form {
     135deg,
     rgba(50, 205, 50, 0.1),
     rgba(148, 0, 211, 0.1)
-  ); 
+  ); /* Light gradient background */
   border-radius: 15px;
   padding: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
 
 .form-group {
@@ -445,8 +451,10 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 15px;
-  border: 2px solid #32cd32; 
-  background-color: #222; 
+  border: 2px solid #32cd32; /* Green border */
+  border-radius: 10px;
+  background-color: #222; /* Dark background */
+  color: #fff;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   transition: border-color 0.3s ease;
@@ -460,7 +468,7 @@ textarea::placeholder {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #9400d3;
+  border-color: #9400d3; /* Purple border on focus */
 }
 
 textarea {
@@ -468,14 +476,15 @@ textarea {
 }
 
 button[type="submit"] {
-  background: linear-gradient(135deg, #32cd32, #000); 
+  background: linear-gradient(135deg, #32cd32, #000); /* Gradient button */
   border: none;
-  padding: 15px 30px; 
+  padding: 15px 30px; /* Increased padding for button */
+  color: white;
   border-radius: 30px;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease; 
-  margin-top: 20px; 
+  transition: transform 0.3s ease, background 0.3s ease; /* Smooth background change */
+  margin-top: 20px; /* Space above button */
 }
 
 button[type="submit"]:hover {
@@ -484,7 +493,7 @@ button[type="submit"]:hover {
     135deg,
     #000,
     #32cd32
-  ); 
+  ); /* Inverted gradient on hover */
 }
 
 /* Footer */
@@ -495,7 +504,7 @@ footer {
   color: #555;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 3rem;
