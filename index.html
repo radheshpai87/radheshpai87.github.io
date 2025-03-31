@@ -87,10 +87,10 @@
 
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="projects-container">
+        <div class="projects-container" onclick="window.location.href='./SimonSaysGame/index.html'">
             <div class="project">
-                <h3>Project 1</h3>
-                <p>Brief description of the project.</p>
+                <h3>Simon Says Game</h3>
+                <p>A Simple Simon says game built using HTML CSS & JavaScript</p>
             </div>
             <div class="project">
                 <h3>Project 2</h3>
@@ -132,7 +132,7 @@
                 document.getElementById('preloader').style.display = 'none';
                 document.getElementById('main-content').style.display = 'block';
                 document.getElementById('main-content').style.transition = 'opacity 1s ease';
-                document.getElementById('main-content').style.opacity = '1'; 
+                document.getElementById('main-content').style.opacity = '1';
             }, 1000);
         }, 5000);
     });

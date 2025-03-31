@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 5px solid white;
+    margin: 2.5rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.pink{
+    background-color: rgb(212,81,117);
+}
+
+.green{
+    background-color: rgb(89,160,184);
+}
+
+.orange{
+    background-color: rgb(250,144,59);
+}
+
+.blue{
+    background-color: rgb(119,148,248);
+}
+
+.flash{
+    background-color: white;
+}
+
+.userFlash{
+    background-color: green;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
