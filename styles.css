@@ -304,13 +304,13 @@ nav ul li a:hover {
 #about {
   padding: 100px 20px;
   background-color: #222;
-  text-align: center;
 }
 
 #about h2 {
   font-size: 2.5rem;
   color: #32cd32;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #about p {
@@ -319,6 +319,7 @@ nav ul li a:hover {
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.8;
+  justify-content: center;
 }
 
 /* Languages section styling */
