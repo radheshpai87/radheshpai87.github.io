@@ -6,12 +6,16 @@ let level = 0;
 
 let h2 = document.querySelector("h2");
 
-document.addEventListener("keypress", function () {
-  if (started == false) {
+
+function startGame() {
+  if (!started) {
     started = true;
     levelUp();
   }
-});
+}
+
+document.addEventListener("keypress", startGame);
+document.addEventListener("click", startGame);
 
 function checkAns(idx) {
   if (userSeq[idx] === gameSeq[idx]) {
