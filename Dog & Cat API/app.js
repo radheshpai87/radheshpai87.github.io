@@ -7,9 +7,11 @@ btn1.addEventListener('click', async () => {
     try {
         const factText = await getFacts();
         fact.innerHTML = factText;
+        fact.style.display = 'block'; // Show the fact
     } catch (error) {
         fact.innerHTML = 'Failed to fetch cat fact. Please try again later.';
         console.error('Error fetching cat fact:', error);
+        fact.style.display = 'block'; // Show the error message
     }
 });
 
