@@ -57,33 +57,6 @@ body {
 
 /* Media Queries for Responsiveness */
 
-/* For tablets and larger screens */
-@media (min-width: 768px) {
-    .btn {
-        height: 250px;
-        width: 250px;
-        margin: 3rem;
-    }
-}
-
-/* For desktops and larger screens */
-@media (min-width: 1024px) {
-    .btn {
-        height: 300px;
-        width: 300px;
-        margin: 3.5rem;
-    }
-}
-
-/* For large desktops */
-@media (min-width: 1200px) {
-    .btn {
-        height: 350px;
-        width: 350px;
-        margin: 4rem;
-    }
-}
-
 /* For small screens (mobile phones) */
 @media (max-width: 767px) {
     body {
