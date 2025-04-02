@@ -76,5 +76,5 @@ function reset() {
   userSeq = [];
   started = false;
   level = 0;
-  h2.innerText = "Press Any Key to Start";
+  h2.innerText = "Click or press Any Key to Start Again!";
 }
