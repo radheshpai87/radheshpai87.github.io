@@ -27,7 +27,7 @@ Clone the repo and open `index.html` in your browser.
 
 ```bash
 git clone https://github.com/radheshpai87/radheshpai87.github.io.git
-cd portfolio
+cd radheshpai87.github.io
 ```
 ## Contact
 Feel free to reach me at radhesh.ratnakar.s87@kalvium.com
