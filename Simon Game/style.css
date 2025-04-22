@@ -1,71 +1,195 @@
 body {
     text-align: center;
-    background-color: black;
-    color: beige;
-    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    color: #f5f5f5;
+    font-family: 'Poppins', 'Segoe UI', 'Arial', sans-serif;
     font-size: 2rem;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow: hidden;
 }
 
-.btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 5px solid white;
-    margin: 2.5rem;
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    animation: fadeInDown 0.8s ease-out;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #b8b8b8;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-out;
 }
 
 .btn-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color 0.2s ease-in-out,
+                transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+    will-change: transform, box-shadow, background-color;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .pink {
-    background-color: rgb(212, 81, 117);
+    background: linear-gradient(145deg, rgb(222, 91, 127), rgb(212, 81, 117));
 }
 
 .green {
-    background-color: rgb(89, 160, 184);
+    background: linear-gradient(145deg, rgb(99, 170, 194), rgb(89, 160, 184));
 }
 
 .orange {
-    background-color: rgb(250, 144, 59);
+    background: linear-gradient(145deg, rgb(255, 154, 69), rgb(250, 144, 59));
 }
 
 .blue {
-    background-color: rgb(119, 148, 248);
+    background: linear-gradient(145deg, rgb(129, 158, 255), rgb(119, 148, 248));
 }
 
 .flash {
-    background-color: white;
+    background: white !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
 }
 
 .userFlash {
-    background-color: green;
+    background: #2ecc71 !important;
+    transform: scale(0.95) !important;
+    transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
 }
 
 .btn:active {
-    transform: scale(0.9);
+    transform: scale(0.95) translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Media Queries for Responsiveness */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-/* For small screens (mobile phones) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .btn {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn {
+        height: 300px;
+        width: 300px;
+    }
+}
+
 @media (max-width: 767px) {
     body {
         font-size: 1.5rem;
     }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
 
     .btn {
-        height: 150px;
-        width: 150px;
-        margin: 2rem;
+        height: 120px;
+        width: 120px;
+        margin: 0.8rem;
     }
 }
+
